@@ -1,6 +1,8 @@
 # Sysfetch
 A simple tool to display system stats.
 
+![License](https://img.shields.io/github/license/BiswasJishnu/Sysfetch?style=flat-square)
+
 ## Dependencies
 
 * [python](https://www.python.org/) - For obvious reasons.
