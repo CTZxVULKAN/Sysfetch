@@ -5,18 +5,18 @@ def main():
 
     print("CPU Status")
     print(' CPU frequency : {} MHz'.format(get_cpu_frequency()))
-    print(' CPU temperature : {} deg C'.format(get_cpu_temp()))
-    print(' System CPU load : {} %'.format(get_cpu_usage_pct()))
+    print(' CPU temperature : {}°C'.format(get_cpu_temp()))
+    print(' CPU usage : {}%'.format(get_cpu_usage_pct()))
     print()
     print("RAM Status")
-    print(' System RAM usage : {} MB'.format(int(get_ram_usage() / 1024 / 1024)))
+    print(' System RAM used : {} MB'.format(int(get_ram_usage() / 1024 / 1024)))
     print('﬙ Total available RAM : {} MB'.format(int(get_ram_total() / 1024 / 1024)))
-    print(' RAM usage is : {} %'.format(get_ram_usage_pct()))
+    print(' RAM usage : {}%'.format(get_ram_usage_pct()))
     print()
     print("SWAP Status")
-    print(' SWAP usage : {} MB'.format(int(get_swap_usage() / 1024 / 1024)))
+    print(' SWAP used : {} MB'.format(int(get_swap_usage() / 1024 / 1024)))
     print(' Total available SWAP : {} MB'.format(int(get_swap_total() / 1024 / 1024)))
-    print(' Swap usage : {} %'.format(get_swap_usage_pct()))
+    print(' Swap usage : {}%'.format(get_swap_usage_pct()))
 
 #CPU
 def get_cpu_usage_pct():
