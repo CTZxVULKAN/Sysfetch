@@ -5,7 +5,11 @@ def main():
 
     print("CPU Status")
     print(' CPU frequency : {} MHz'.format(get_cpu_frequency()))
-    print(' CPU temperature : {}°C'.format(get_cpu_temp()))
+
+    # /sys/class/thermal/thermal_zone0 directory does not exist in some linux distros in that case the cpu temp is displayed 0.  
+    if os.path.exists("/sys/class/thermal/thermal_zone0"):
+        print(' CPU temperature : {}°C'.format(get_cpu_temp()))
+
     print(' CPU usage : {}%'.format(get_cpu_usage_pct()))
     print()
     print("RAM Status")
