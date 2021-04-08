@@ -30,7 +30,7 @@ git clone https://github.com/BiswasJishnu/Sysfetch.git
 
 ```
 
-2. Copy the sysfetch.py
+2. Copy the program
 
 ``` html
 mkdir ~/.sysfetch
@@ -72,4 +72,8 @@ $ sysfetch
 ```
 
 > * Incase you need to remove the symbolic link use the command below
-> sudo rm /usr/bin/sysfetch
+
+```html
+sudo rm /usr/bin/sysfetch
+```
+
