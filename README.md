@@ -4,7 +4,7 @@ A minimal tool to display system stats.
 ![License](https://img.shields.io/github/license/BiswasJishnu/Sysfetch?style=flat-square)
 ![Platform](https://img.shields.io/static/v1?label=platform&message=Linux&style=flat-square&color=orange)
 ![Project Banner](./repo/RepoBanner.png)
-![Project Screenshot](./repo/Screenshot1.png)
+![Project Screenshot](./repo/screenshot1.png)
 ## Dependencies
 
 * [python](https://www.python.org/) - For obvious reasons.
