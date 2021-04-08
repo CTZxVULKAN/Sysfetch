@@ -52,9 +52,9 @@ sudo chmod +x sysfetch.py
 4. Make sure python dependencies are installed
 
 ``` html
-pip3 install psutil
+pip3 install -r requirements.txt
 or 
-pip install psutil
+pip install -r requirements.txt
 
 ```
 
