@@ -41,20 +41,19 @@ cp sysfetch.py ~/.sysfetch/
 
 > * Over here the python file from the git repo directory is being copied to .sysfetch directory. You may change the location.
 
-3. Make the file executable
-
-``` html
-cd ~/.sysfetch
-sudo chmod +x sysfetch.py
-
-```
-
-4. Make sure python dependencies are installed
+3. Make sure python dependencies are installed
 
 ``` html
 pip3 install -r requirements.txt
 or 
 pip install -r requirements.txt
+
+```
+4. Make the file executable
+
+``` html
+cd ~/.sysfetch
+sudo chmod +x sysfetch.py
 
 ```
 
