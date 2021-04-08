@@ -16,3 +16,60 @@ A minimal tool to display system stats.
 ## Screenshots
 
 ![Project Screenshot](./repo/screenshot1.png)
+
+<br> 
+
+## Installation 
+
+### Symbolic Link
+
+1. Clone this repository
+
+``` html
+git clone https://github.com/BiswasJishnu/Sysfetch.git
+
+```
+
+2. Copy the sysfetch.py
+
+``` html
+mkdir ~/.sysfetch
+cd Sysfetch
+cp sysfetch.py ~/.sysfetch/
+
+```
+
+> * Over here the python file from the git repo directory is being copied to .sysfetch directory. You may change the location.
+
+3. Make the file executable
+
+``` html
+cd ~/.sysfetch
+sudo chmod +x sysfetch.py
+
+```
+
+4. Make sure python dependencies are installed
+
+``` html
+pip3 install psutil
+or 
+pip install psutil
+
+```
+
+5. Create the symbolic link
+
+```html
+sudo ln -s /path/to/sysfetch/sysfetch.py /usr/bin/sysfetch
+
+```
+
+Now you can run the program with 
+
+```html
+$ sysfetch
+```
+
+> * Incase you need to remove the symbolic link use the command below
+> sudo rm /usr/bin/sysfetch
