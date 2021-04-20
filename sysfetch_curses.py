@@ -12,7 +12,7 @@ def output(stdscr):
         cpu_useage_pct = ' CPU usage : {}%'.format(sysfetch_functions.get_cpu_usage_pct())
         cpu_temp = ' CPU temperature : {}°C'.format(sysfetch_functions.get_cpu_temp())
 
-        ram_used = '  System RAM used : {} MB'.format(int(sysfetch_functions.get_ram_usage() / 1024 / 1024))
+        ram_used = ' System RAM used : {} MB'.format(int(sysfetch_functions.get_ram_usage() / 1024 / 1024))
         ram_total = ' Total available RAM : {} MB'.format(int(sysfetch_functions.get_ram_total() / 1024 / 1024))
         ram_useage_pct=' RAM usage : {}%'.format(sysfetch_functions.get_ram_usage_pct())
 
