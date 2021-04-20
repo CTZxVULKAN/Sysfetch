@@ -102,7 +102,7 @@ def get_swap_usage_pct():
 
 #OUTPUT
 
-def main(stdscr):
+def output(stdscr):
 
     cpu_freqz = ' CPU frequency : {} MHz'.format(get_cpu_frequency())
     cpu_useage_pct = ' CPU usage : {}%'.format(get_cpu_usage_pct())
@@ -142,6 +142,12 @@ def main(stdscr):
     stdscr.refresh()
     time.sleep(10)
 
-curses.wrapper(main)
+
+def main():
+    curses.wrapper(output)
+
+if __name__ == "__main__":
+    main()
+
 
 
