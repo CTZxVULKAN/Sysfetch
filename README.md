@@ -53,14 +53,14 @@ pip install -r requirements.txt
 
 ``` html
 cd ~/.sysfetch
-sudo chmod +x sysfetch.py
+sudo chmod +x sysfetch_curses.py
 
 ```
 
 5. Create the symbolic link
 
 ```html
-sudo ln -s /path/to/sysfetch/sysfetch.py /usr/bin/sysfetch
+sudo ln -s /path/to/sysfetch/sysfetch_curses.py /usr/bin/sysfetch
 
 ```
 
