@@ -35,7 +35,7 @@ git clone https://github.com/BiswasJishnu/Sysfetch.git
 ``` html
 mkdir ~/.sysfetch
 cd Sysfetch
-cp sysfetch.py ~/.sysfetch/
+cp sysfetch.py sysfetch_functions.py ~/.sysfetch/
 
 ```
 
