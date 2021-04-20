@@ -8,6 +8,13 @@ import sysfetch_functions
 
 def output(stdscr):
     while True:
+
+        """
+        fetch all the data required using the functions in sysfetch_functions.py 
+        convert the fetched values to strings and display them 
+        apply an infinite loop to keep fetching and refreshing the values every 1 sec.
+        """
+
         cpu_freqz = ' CPU frequency : {} MHz'.format(sysfetch_functions.get_cpu_frequency())
         cpu_useage_pct = ' CPU usage : {}%'.format(sysfetch_functions.get_cpu_usage_pct())
         cpu_temp = ' CPU temperature : {}°C'.format(sysfetch_functions.get_cpu_temp())
@@ -40,8 +47,13 @@ def output(stdscr):
         stdscr.addstr(11,1,swap_used)
         stdscr.addstr(12,1,swap_total)
         stdscr.addstr(13,1,swap_useage_pct)
-
-
+        
+        #Window Decorations
+        
+        #Do not use any color scheme ,follow the default color scheme
+        curses.use_default_colors()
+        #We do not need to show the cursor when the program is running
+        curses.curs_set(0) 
 
         stdscr.refresh()
         time.sleep(1)
