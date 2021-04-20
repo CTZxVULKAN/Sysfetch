@@ -5,9 +5,11 @@ import os
 import sysfetch_functions
 
 #OUTPUT
-
+col=1
 def output(stdscr):
     while True:
+
+        row=0
 
         """
         fetch all the data required using the functions in sysfetch_functions.py 
@@ -27,26 +29,29 @@ def output(stdscr):
         swap_total = ' Total available SWAP : {} MB'.format(int(sysfetch_functions.get_swap_total() / 1024 / 1024))
         swap_useage_pct = ' Swap usage : {}%'.format(sysfetch_functions.get_swap_usage_pct())
 
-        stdscr.addstr(0,1,"CPU Status")
-        stdscr.addstr(1,1,cpu_freqz)
+        stdscr.addstr(row,col,"CPU Status")
         if os.path.exists("/sys/class/thermal/thermal_zone0"):
-            stdscr.addstr(2,1,cpu_temp)
-        stdscr.addstr(3,1,cpu_useage_pct)
+            stdscr.addstr(row+1,col,cpu_temp)
+        else :
+            row=row-1
+        stdscr.addstr(row+2,col,cpu_freqz)
 
-        stdscr.addstr(4,1,"")
+        stdscr.addstr(row+3,col,cpu_useage_pct)
 
-        stdscr.addstr(5,1,"RAM Status")
-        stdscr.addstr(6,1,ram_used)
-        stdscr.addstr(7,1,ram_total)
-        stdscr.addstr(8,1,ram_useage_pct)
+        stdscr.addstr(row+4,col,"")
+
+        stdscr.addstr(row+5,col,"RAM Status")
+        stdscr.addstr(row+6,col,ram_used)
+        stdscr.addstr(row+7,col,ram_total)
+        stdscr.addstr(row+8,col,ram_useage_pct)
 
 
-        stdscr.addstr(9,1,"")
+        stdscr.addstr(row+9,col,"")
 
-        stdscr.addstr(10,1,"SWAP Status")
-        stdscr.addstr(11,1,swap_used)
-        stdscr.addstr(12,1,swap_total)
-        stdscr.addstr(13,1,swap_useage_pct)
+        stdscr.addstr(row+10,col,"SWAP Status")
+        stdscr.addstr(row+11,col,swap_used)
+        stdscr.addstr(row+12,col,swap_total)
+        stdscr.addstr(row+13,col,swap_useage_pct)
         
         #Window Decorations
         
